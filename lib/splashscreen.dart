@@ -1,3 +1,4 @@
+import 'package:catanddogpredictor/home.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
