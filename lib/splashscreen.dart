@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
-class Myslash extends StatefulWidget {
-  const Myslash({Key? key}) : super(key: key);
+class MySlash extends StatefulWidget {
+  const MySlash({Key? key}) : super(key: key);
 
   @override
-  _MyslashState createState() => _MyslashState();
+  _MySlashState createState() => _MySlashState();
 }
 
-class _MyslashState extends State<Myslash> {
+class _MySlashState extends State<MySlash> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SplashScreen(
+      seconds: 2,
+      navigateAfterSeconds: Home(),
+      title: Text(
+        'Dog and Cat',
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+          color: Color(
+            0xFFE99600,
+          ),
+        ),
+      ),
+    );
   }
 }
