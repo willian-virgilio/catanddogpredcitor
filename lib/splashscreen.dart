@@ -26,6 +26,7 @@ class _MySlashState extends State<MySlash> {
         ),
       ),
       image: Image.asset('assets/cat.png'),
+      photoSize: 50.0,
       backgroundColor: Colors.black12,
       loaderColor: Color(0xFFEEDA28),
     );
