@@ -11,6 +11,18 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final picker = ImagePicker();
+  File _image;
+
+  pickImage() async {
+    var image = await picker.getImage(source: ImageSource.camera);
+
+    if (image == null) return null;
+    setState(() {
+      _image = File(image.path);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
