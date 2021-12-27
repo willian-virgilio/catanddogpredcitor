@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
       imageMean: 127.5,
       imageStd: 127.5,
     );
-//git a
+//git absc
     setState(() {
       _loading = false;
       if (output != null) {
